@@ -1,0 +1,150 @@
+/* ================================
+   GLOBAL UI CONSISTENCY LAYER
+================================ */
+
+/* Page wrapper */
+.ui-page {
+  padding: 32px;
+  min-height: 100vh;
+  background: #f8fafc;
+  animation: pageFade 0.4s ease;
+}
+
+/* Content width control */
+.ui-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page title */
+.ui-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 24px;
+}
+
+/* Section title */
+.ui-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 28px 0 16px;
+}
+
+/* Card */
+.ui-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.ui-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.1);
+}
+
+/* Table wrapper */
+.ui-table {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+/* Empty state */
+.ui-empty {
+  padding: 40px;
+  text-align: center;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* Buttons */
+.ui-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.ui-btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.ui-btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.ui-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Status / Severity badges */
+.ui-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge-high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badge-medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-low {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.report-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+.approve-hover:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.report-card-hover {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Animations */
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

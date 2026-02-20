@@ -1,0 +1,105 @@
+/* ===============================
+   GLOBAL TEXT VISIBILITY FIX
+   =============================== */
+
+/* 1️⃣ Ensure all main text is readable */
+body {
+  color: #0f172a; /* slate-900 */
+}
+
+/* 2️⃣ Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a;
+  opacity: 1 !important;
+}
+
+/* 3️⃣ Paragraphs, labels, table text */
+p, span, td, th, label {
+  color: #334155; /* slate-700 */
+  opacity: 1 !important;
+}
+
+/* 4️⃣ Dashboard stat numbers */
+.stat-value,
+.dashboard-value {
+  color: #020617; /* slate-950 */
+  opacity: 1 !important;
+}
+
+/* ===============================
+   TABLE FIXES
+   =============================== */
+
+table {
+  color: #0f172a;
+}
+
+thead th {
+  color: #0f172a !important;
+  font-weight: 600;
+}
+
+tbody td {
+  color: #334155 !important;
+}
+
+/* ===============================
+   CARD FIXES
+   =============================== */
+
+.card,
+.stat-card {
+  opacity: 1 !important;
+}
+
+/* Prevent animation opacity from affecting children */
+.card * {
+  opacity: 1 !important;
+}
+
+/* ===============================
+   STATUS BADGES
+   =============================== */
+
+.badge,
+.status-badge {
+  font-weight: 600;
+  opacity: 1 !important;
+}
+
+/* Specific statuses */
+.status-pending {
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+.status-in-progress {
+  background: #ecfeff;
+  color: #075985;
+}
+
+.status-resolved {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+/* ===============================
+   BUTTON TEXT
+   =============================== */
+
+button {
+  opacity: 1 !important;
+  font-weight: 500;
+}
+
+button span {
+  color: inherit;
+}
+
+/* ===============================
+   NAVBAR SAFETY (NO BREAKS)
+   =============================== */
+
+nav, nav * {
+  opacity: 1 !important;
+}
